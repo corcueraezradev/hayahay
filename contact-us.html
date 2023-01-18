@@ -123,22 +123,8 @@
         <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9812935502378!2d124.0076482!3d12.9730482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a0efa84f233aa5%3A0x5de4ff0f9181c632!2sHayahay%20Travel%20and%20Tours%20Booking%20Office!5e0!3m2!1sen!2sau!4v1668309127246!5m2!1sen!2sau" width="1503" height="455" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
 
-      <!-- Contact Form-->
-      <section class="section section-sm section-first bg-default text-left">
-        <div class="container">
-          <article class="title-classic">
-            <div class="title-classic-title">
-              <h3>Get in touch</h3>
-            </div>
-            <div class="title-classic-text">
-              <p>If you have any questions, just drop us a message, and we will answer you shortly.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
       <!-- Contact information-->
-      <section class="section section-sm section-last bg-default">
+      <section class="section section-sm section-first bg-default">
         <div class="container">          
           <div class="row row-30 justify-content-center">
             <div class="col-sm-8 col-md-6 col-lg-4">
@@ -185,7 +171,49 @@
             
           </div>
         </div>
-      </section>     
+      </section> 
+      
+      <section class="section section-sm section-last bg-default text-left">
+        <div class="container">
+          <article class="title-classic">
+            <div class="title-classic-title">
+              <h3>Get in touch</h3>
+            </div>
+            <div class="title-classic-text">
+              <p>If you have any questions, just fill in the contact form, and we will answer you shortly.</p>
+            </div>
+          </article>
+          <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="https://script.google.com/macros/s/AKfycbyl1VilRFa-wIyI82uHLyeUc_jKCROsPZFkcWCv-NWAJrpgFLy9Jz6i3Pdj6hOHqTmZTA/exec" novalidate="novalidate">
+            <div class="row row-14 gutters-14">
+              <div class="col-md-4">
+                <div class="form-wrap">
+                  <input class="form-input form-control-has-validation" id="contact-your-name-2" type="text" name="Name" data-constraints="@Required"><span class="form-validation"></span>
+                  <label class="form-label rd-input-label" for="contact-your-name-2">Your Name</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-wrap">
+                  <input class="form-input form-control-has-validation" id="contact-email-2" type="email" name="Email" data-constraints="@Email @Required"><span class="form-validation"></span>
+                  <label class="form-label rd-input-label" for="contact-email-2">E-mail</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-wrap">
+                  <input class="form-input form-control-has-validation" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric"><span class="form-validation"></span>
+                  <label class="form-label rd-input-label" for="contact-phone-2">Phone</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-wrap">
+                  <label class="form-label rd-input-label" for="contact-message-2">Message</label>
+                  <textarea class="form-input textarea-lg form-control-has-validation form-control-last-child" id="contact-message-2" name="message" data-constraints="@Required"></textarea><span class="form-validation"></span>
+                </div>
+              </div>
+            </div>
+            <button class="button button-primary button-pipaluk" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
 
       <!-- Page Footer-->
       <footer class="section footer-corporate context-dark">
