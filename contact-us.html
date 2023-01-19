@@ -183,7 +183,7 @@
               <p>If you have any questions, just fill in the contact form, and we will answer you shortly.</p>
             </div>
           </article>
-          <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="https://script.google.com/macros/s/AKfycbyl1VilRFa-wIyI82uHLyeUc_jKCROsPZFkcWCv-NWAJrpgFLy9Jz6i3Pdj6hOHqTmZTA/exec" novalidate="novalidate">
+          <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact" novalidate="novalidate" id="form">
             <div class="row row-14 gutters-14">
               <div class="col-md-4">
                 <div class="form-wrap">
@@ -199,13 +199,19 @@
               </div>
               <div class="col-md-4">
                 <div class="form-wrap">
-                  <input class="form-input form-control-has-validation" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric"><span class="form-validation"></span>
+                  <input class="form-input form-control-has-validation" id="contact-phone-2" type="text" name="Phone" data-constraints="@Numeric"><span class="form-validation"></span>
                   <label class="form-label rd-input-label" for="contact-phone-2">Phone</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-wrap">
+                  <input class="form-input form-control-has-validation" id="contact-phone-2" type="text" name="Package" data-constraints="@Numeric"><span class="form-validation"></span>
+                  <label class="form-label rd-input-label" for="contact-phone-2">Tour Package name</label>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-wrap">
-                  <label class="form-label rd-input-label" for="contact-message-2">Message</label>
+                  <label class="form-label rd-input-label" for="contact-message-2">Message or inquiry</label>
                   <textarea class="form-input textarea-lg form-control-has-validation form-control-last-child" id="contact-message-2" name="message" data-constraints="@Required"></textarea><span class="form-validation"></span>
                 </div>
               </div>
@@ -276,5 +282,19 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const form = document.querySelector("#form")
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxRsCxVw60Qp71G7OuOBEsu5Z87Vs5mEn8D_DeMLrrYDV07eP1nyoaTSAmawyCESCOKHQ/exec'
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+    
+        const responseBody = new FormData(form)
+        fetch(scriptURL, { method: 'POST', body: responseBody })
+          .then(response => { alert('Your message was sent successfully!', response) 
+        form.reset()})
+          .catch(error => alert('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
