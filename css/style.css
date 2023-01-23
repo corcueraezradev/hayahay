@@ -304,6 +304,7 @@ p [style*='max-width'] {
 .brand {
 	display: inline-block;
 	font-family: 'Kaushan Script', cursive;
+	
 }
 
 .brand-text{
@@ -322,6 +323,31 @@ p [style*='max-width'] {
 
 .brand .brand-logo-dark {
 	display: block;
+}
+
+
+
+#banner_brand{
+	font-size: 60px;
+	text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+
+@media (max-width: 981px){
+    #banner_brand{
+        font-size: 40px;
+		text-shadow:1px 1px 5px #fff, 1px 1px 5px #ccc;
+    }
+	#banner_img{
+		height: 37px
+	}
+
+	#destination{
+		padding-bottom: 10px
+	}
+
+	#int-destination{
+		padding-right: 0px;
+	}
 }
 
 /*
@@ -24706,4 +24732,14 @@ img.mfp-img {
 	.banner-top {
 		display: none;
 	}
+}
+
+#banner_paralax {
+	font-size: 16px;
+}
+
+@media (max-width: 981px){
+    #banner_paralax {
+        font-size: 14px;
+    }
 }
