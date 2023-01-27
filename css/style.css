@@ -53,7 +53,9 @@ ol li {
 	text-align: left;
 }
 
-
+.fa-sun-o {
+	color: orange;
+}
 dl {
 	margin: 0;
 }
