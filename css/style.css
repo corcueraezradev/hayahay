@@ -53,9 +53,16 @@ ol li {
 	text-align: left;
 }
 
-.fa-sun-o {
+
+.list-icon .fa{
+	color: darkslategray
+
+}
+
+.list-icon .fa-sun-o {
 	color: orange;
 }
+
 dl {
 	margin: 0;
 }
