@@ -63,6 +63,14 @@ ol li {
 	color: orange;
 }
 
+.places li{
+	padding: 3px 0;
+}
+
+.places li img{
+	margin-right: 0.5em;
+}
+
 dl {
 	margin: 0;
 }
