@@ -796,10 +796,12 @@
 
 					parallax.css({
 						"background-image": 'url(' + imgPath + ')',
-						"background-size":  "cover"
+						"background-size":  "cover",
+						"margin-bottom": "30px"
 					});
 				}
 			}
 		}
 	});
+	
 }());
