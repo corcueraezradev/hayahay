@@ -10461,7 +10461,7 @@ h2.title-modern > span {
 }
 
 .title-opacity-9 {
-	color: rgba(21, 21, 21, 0.09);
+	color: rgba(21, 21, 21, 0.2);
 }
 
 * + .heading-panel-subtitle {
@@ -24763,5 +24763,11 @@ img.mfp-img {
 @media (max-width: 981px){
     #banner_paralax {
         font-size: 14px;
+    }
+}
+
+@media (min-width: 981px){
+    #banner_paralax {
+        min-height: 400px;
     }
 }
